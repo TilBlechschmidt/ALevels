@@ -163,6 +163,18 @@
 	\section{Stochastik}
 		\subsection{Baumdiagramm}
 		\subsection{Vierfeldertafel}
+			Die Vierfeldertafel ist eine Methode um den Zusammenhang mehrerer Wahrscheinlichkeiten darzustellen. Dabei werden die angegebenen Wahrscheinlichkeiten vertikal beziehungsweise horizontal summiert und dann anschließend zu 100\% addiert.
+			
+			\setlength{\tabcolsep}{10pt}
+			\renewcommand{\arraystretch}{1.5}
+			\begin{center}
+				\begin{tabular}{ l | c | c | r }
+									& $B$ 	& $\overline{B}$ 	& 		\\ \hline
+					$A$ 			& 42\% 	& 25\% 				& 67\%	\\ \hline
+					$\overline{A}$ 	& 8\% 	& 25\%				& 33\% 	\\ \hline
+					& 50\% 	& 50\% 				& 100
+				\end{tabular}
+			\end{center}
 		\subsection{Verteilungen}
 			\subsubsection{Binomialkoeffizient}
 				Ein Binomialkoeffizient ist wie folgt definiert.
@@ -173,9 +185,9 @@
 				Die Binomialverteilung gibt die Anzahl der Erfolge in einer Serie von Versuchen an, bei denen sich die Wahrscheinlichkeiten für die einzelnen Ereignisse nicht verändert. Dabei können die Versuche nur zwei mögliche Ergebnisse haben. Solche Versuchsreihen werden als Bernoulli-Kette beschrieben.\\
 				Um die Binomialverteilung $B(X = k)$ zu berechnen, benötigt man die Erfolgswahrscheinlichkeit $p$ sowie die Anzahl der Versuche $n$ und die Anzahl der zu erwartenden Erfolge $k$.
 				\begin{equation}
-					B(n; p; k) = \binom{n}{k} * p^k * (1 - p)^{n-k}
+					B(n; p; k) = \binom{n}{k} p^k (1 - p)^{n-k}
 				\end{equation}
-			\subsubsection{hypergeometrische Verteilung}
+			\subsubsection{Hypergeometrische Verteilung}
 				Die hypergeometrische Verteilung gibt die Anzahl der Erfolge in einer Serie von Versuchen an, bei denen sich die Wahrscheinlichkeiten für die einzelnen Ereignisse im Laufe der Versuchsreihe ändern. Zur Berechnung benötigt man:
 				\begin{itemize}
 					\item[$N$] Anzahl der Elemente (z.B. Kugeln)
