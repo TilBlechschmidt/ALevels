@@ -165,16 +165,41 @@
 		\subsection{Vierfeldertafel}
 		\subsection{Verteilungen}
 			\subsubsection{Binomialverteilung}
+				Die Binomialverteilung gibt die Anzahl der Erfolge in einer Serie von Versuchen an, bei denen sich die Wahrscheinlichkeiten für die einzelnen Ereignisse nicht verändert. Dabei können die Versuche nur zwei mögliche Ergebnisse haben. Solche Versuchsreihen werden als Bernoulli-Kette beschrieben.\\
+				Um die Binomialverteilung $B(X = k)$ zu berechnen, benötigt man die Erfolgswahrscheinlichkeit $p$ sowie die Anzahl der Versuche $n$ und die Anzahl der zu erwartenden Erfolge $k$.
+				\begin{equation}
+					B(n; p; k) = \left(
+						\begin{array}{c}
+							n\\
+							k
+						\end{array}
+					\right) * p^k * (1 - p)^{n-k}
+				\end{equation}
 			\subsubsection{hypergeometrische Verteilung}
 		\subsection{Erwartungswert}
 			Der Erwartungswert gibt den Wert an, welcher zu erwarten ist, wenn man das gegebene Experiment n-Mal durchführt wird. Er wird mit $E\left(X\right)$ bzw. $\mu$ beschrieben und ist wie folgt definiert.
 			\begin{equation}
 				E(X) = \mu = a_1 * P(X = a_1) + a_2 * P(X = a_2) + \dotsc + a_m * P(X = a_m)
 			\end{equation}
+			
+			\noindent
+			Bei der Binomialverteilung kann man den Erwartungswert wie folgt ausdrücken.
+			\begin{equation}
+				E(X) = n * p
+			\end{equation}
 		\subsection{Varianz}
 			Die Varianz gibt die zu erwartende quadratische Abweichung vom Erwartungswert $\mu$ an und wird mit $V\left(X\right)$ beziehungsweise $\sigma$ beschrieben. Man kann sie mittels folgender Gleichung berechnen.
 			\begin{equation}
 				V(X) = \sigma^2 = (a_1 - \mu)^2 * P(X = a_1) + (a_2 - \mu)^2 * P(X = a_2) + \dotsc + (a_m - \mu)^2 * P(X = a_m)
+			\end{equation}
+			
+			\noindent
+			Bei der Binomialverteilung kann man die Varianz wie folgt ausdrücken.
+			\begin{equation}
+				\begin{split}
+					V(X) &= n * p * q\\
+					V(X) &= n * p * (1-p)
+				\end{split}
 			\end{equation}
 		\subsection{Standardabweichung}
 			Die Standartabweichung gibt die Abweichung der Werte vom Erwartungswert an. Sie ist die Quadratwurzel der Varianz.
