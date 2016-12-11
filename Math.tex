@@ -89,16 +89,49 @@
 				
 			\subsubsection{Ableitungen}
 				\paragraph{Summenregel}
-					Beinhaltet die Funktion, welche man differenziert eine Summe, so leitet man Summantenweise, also jeden Summanten einzeln ab.
+					Beinhaltet die Funktion, welche man ableitet eine Summe, so leitet man Summantenweise, also jeden Summanten einzeln ab.
 				
 				\paragraph{Produktregel}
-					Beinhaltet die Funktion, welche man differenziert ein Produkt, so wird wie folgt abgeleitet.
+					Beinhaltet die Funktion, welche man ableitet ein Produkt, so wird wie folgt abgeleitet.
 					\begin{subequations}
 						\begin{align}
 							f(x) &= u(x) * v(x)\\
 							f'(x) &= u'(x) * v(x) + v'(x) * u(x)
 						\end{align}
 					\end{subequations}
+				
+				\paragraph{Quotientenregel}
+					Beinhaltet die Funktion, welche man ableitet einen Quotient, so wird wie folgt abgeleitet.
+					\begin{subequations}
+						\begin{align}
+							f(x) &= u(x) * v(x)\\
+							f'(x) &= \frac{u'(x) * v(x) - v'(x) * u(x)}{v^2(x)}
+						\end{align}
+					\end{subequations}
+				
+				\paragraph{Kettenregel}
+					Wenn die abzuleitende Funktion aus mehreren ableitbaren Teilen besteht, so leitet man zunächst die innere Funktion ab und multipliziert sie anschließend mit der äußeren.
+						\begin{subequations}
+							\begin{align}
+								f(x) &= (3x - 2)^8\\
+								u(x) &= 3x - 2\\
+								a(x) &= u(x)^8
+							\end{align}
+						\end{subequations}
+						\begin{subequations}
+							\begin{align}
+								u'(x) &= 3\\
+								a'(x) &= 8u(x)^7
+							\end{align}
+						\end{subequations}
+						\begin{equation}
+							\begin{split}
+								f'(x) &= 8u(x)^7 * 3\\
+								f'(x) &= 8(3x - 2)^7 * 3\\
+								f'(x) &= 24(3x - 2)^7
+							\end{split}
+						\end{equation}
+						
 					
 			\paragraph{Beispiel}
 				Die folgenden Funktionen werden als Beispiel für eine Reihe von Ableitungen dienen:
