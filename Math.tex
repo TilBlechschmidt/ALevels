@@ -90,12 +90,12 @@
 				Die erste Ableitung eines Graphen gibt die Steigung dessen an.
 				\begin{subequations}
 					\begin{equation}
-						f(x)' = a * bx^{b-1}\\
+						f(x)' = a * bx^{b-1}
 					\end{equation}
 					\begin{equation}
 						\begin{split}
 							g(x)' &= 10*2x^1\\
-							g(x)' &= 20x
+							g(x)' &= 20x\label{abl:first}
 						\end{split}
 					\end{equation}
 				\end{subequations}
@@ -103,7 +103,7 @@
 				Die zweite Ableitung bildet sich, indem man die erste Ableitung ableitet, also die Steigung der ersten Ableitung angibt.
 				\begin{equation}
 					\begin{split}
-						g(x)'' &= 20
+						g(x)'' &= 20\label{abl:second}
 					\end{split}
 				\end{equation}
 				
@@ -169,6 +169,21 @@
 				\sigma = \sqrt{V(X)}
 			\end{equation}
 		\subsection{Sigma-Regel}
+			Mittels der Sigma-Regeln können die Wahrscheinlichkeiten der Umgebung des Erwartungswertes näherungsweise bestimmt werden. Diese treffen jedoch nur zu, sofern die Laplace-Bedingung erfüllt ist ($\sigma > 3$).
+			\begin{subequations}
+				\begin{align}
+					P(\mu - 1\sigma \leq X \leq \mu + 1\sigma) &\approx 0.683\\
+					P(\mu - 2\sigma \leq X \leq \mu + 2\sigma) &\approx 0.955\\
+					P(\mu - 3\sigma \leq X \leq \mu + 3\sigma) &\approx 0.997
+				\end{align}
+			\end{subequations}
+			\begin{subequations}
+				\begin{align}
+				P(\mu - 1.64\sigma \leq X \leq \mu + 1.64\sigma) &\approx 0.90\\
+				P(\mu - 1.96\sigma \leq X \leq \mu + 1.96\sigma) &\approx 0.95\\
+				P(\mu - 2.58\sigma \leq X \leq \mu + 2.58\sigma) &\approx 0.99
+				\end{align}
+			\end{subequations}
 			
 
 \end{document}          
