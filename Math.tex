@@ -185,7 +185,7 @@
 				Die Binomialverteilung gibt die Anzahl der Erfolge in einer Serie von Versuchen an, bei denen sich die Wahrscheinlichkeiten für die einzelnen Ereignisse nicht verändert. Dabei können die Versuche nur zwei mögliche Ergebnisse haben. Solche Versuchsreihen werden als Bernoulli-Kette beschrieben.\\
 				Um die Binomialverteilung $B(X = k)$ zu berechnen, benötigt man die Erfolgswahrscheinlichkeit $p$ sowie die Anzahl der Versuche $n$ und die Anzahl der zu erwartenden Erfolge $k$.
 				\begin{equation}
-					B(n; p; k) = \binom{n}{k} p^k (1 - p)^{n-k}
+					B(n; p; k) = B(X = k) = \binom{n}{k} p^k (1 - p)^{n-k}
 				\end{equation}
 			\subsubsection{Hypergeometrische Verteilung}
 				Die hypergeometrische Verteilung gibt die Anzahl der Erfolge in einer Serie von Versuchen an, bei denen sich die Wahrscheinlichkeiten für die einzelnen Ereignisse im Laufe der Versuchsreihe ändern. Zur Berechnung benötigt man:
@@ -250,7 +250,7 @@
 				\begin{align}
 				P(\mu - 1.64\sigma \leq X \leq \mu + 1.64\sigma) &\approx 0.90\\
 				P(\mu - 1.96\sigma \leq X \leq \mu + 1.96\sigma) &\approx 0.95\\
-				P(\mu - 2.58\sigma \leq X \leq \mu + 2.58\sigma) &\approx 0.99w
+				P(\mu - 2.58\sigma \leq X \leq \mu + 2.58\sigma) &\approx 0.99
 				\end{align}
 			\end{subequations}
 			
