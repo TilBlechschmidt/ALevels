@@ -1,0 +1,174 @@
+\documentclass[a4paper]{article}
+
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{empheq}
+\usepackage{mathtools}
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage[margin=2cm]{geometry}
+
+
+%opening
+\title{}
+\author{}
+\title{Abiturvorbereitung Mathe}
+\author{Til Blechschmidt\\ Schüler, Otto-Hahn-Gymnasium Geesthacht, Germany}
+
+
+\begin{document}
+
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\newpage
+
+	\section{Analysis}
+		\subsection{Kurvendiskussion}
+			\subsubsection{Nullstellen}
+				Eine Nullstelle beschreibt den Ort, an dem ein Graph die X-Achse schneidet, also seine Y-Komponente null entspricht.
+				Zur Berechnung der Nullstellen einer Funktion muss $f(x) = 0$ gelten. Löst man diese nun nach x auf erhält man die X-Komponente des Nullpunkts.
+				
+				\begin{equation} \label{null:function}
+				f(x) = 5x^2 + 4x
+				\end{equation}
+				
+				Setzt man nun die Funktion \ref{null:function} gleich null so erhält man:
+				
+				\begin{equation}
+					\begin{split}
+						f(x) &= 0\\
+						5x^2 + 4x &= 0\\
+						x(5x + 4) &= 0
+					\end{split}
+				\end{equation}
+				
+				Nun kann man den folgenden Satz anwenden: Ein Produkt ist null, wenn einer der Faktoren null ist.\\
+				
+				\begin{align}
+					x_1 &= 0\\
+					5x_2 + 4 &= 0 \label{null:second_factor}
+				\end{align}
+				
+				Löst man nun Gleichung \ref{null:second_factor} nach $x$ auf, so erhält man schlussendlich die beiden X-Koordinaten der Nullpunkte
+				
+				\begin{equation}
+					\begin{split}
+						5x_2 + 4 &= 0\\
+						5x_2 &= -4\\
+						x_2 &= -\frac{4}{5}
+					\end{split}
+				\end{equation}
+				
+				\noindent
+				Nun kann man diese X-Komponente mit der Y-Komponente, welche im Falle der Nullpunkte immer null entspricht, zu einem Punkt zusammenschließen.
+				
+				\begin{equation}
+					N_1\left(0\middle|0\right); 
+					N_2\left(0\middle|-\frac{4}{5}\right)
+				\end{equation}
+				
+			\subsubsection{Ableitungen}
+				\begin{equation}
+					\begin{split}
+						f(x) &= ax^b + c\\
+						g(x) &= 10x^2 + 3
+					\end{split}
+				\end{equation}
+				
+				Die erste Ableitung eines Graphen gibt die Steigung dessen an.
+				\begin{subequations}
+					\begin{equation}
+						f(x)' = a * bx^{b-1}\\
+					\end{equation}
+					\begin{equation}
+						\begin{split}
+							g(x)' &= 10*2x^1\\
+							g(x)' &= 20x
+						\end{split}
+					\end{equation}
+				\end{subequations}
+				
+				Die zweite Ableitung bildet sich, indem man die erste Ableitung ableitet, also die Steigung der ersten Ableitung angibt.
+				\begin{equation}
+					\begin{split}
+						g(x)'' &= 20
+					\end{split}
+				\end{equation}
+				
+				Folglich bildet sich die dritte Ableitung, indem man die zweite ableitet.
+				\begin{equation}
+					\begin{split}
+						g(x)''' &= 0
+					\end{split}
+				\end{equation}
+				
+			\subsubsection{Extremstellen}
+				Extremstellen beschreiben Orte, an denen der Graph einer Funktion $f(x)$ seine maximale Auslenkung erreicht. Zur Berechnung der Extremstelle einer Funktion muss $f(x)' = 0$, sowie $f(x)'' \neq 0$ gelten. Anschaulich bedeutet es, dass die Steigung des Graphen null entspricht und seine Ausrichtung ist nicht parallel zur X-Achse.
+				Folglich setzt man nun die erste Ableitung (\ref{abl:first}) mit null gleich.
+				
+				\begin{equation}
+					\begin{split}
+						g(x)' &= 0\\
+						40 x^3 &= 0\\
+						x &= \sqrt[3]{\frac{0}{40}}\\
+						x &= 0
+					\end{split}
+				\end{equation}
+				
+				Nun muss man die zweite, hinreichende Bedingung überprüfen, indem man die zweite Ableitung (\ref{abl:second}) an der zuvor berechneten Stelle berechnet.
+				
+				\begin{equation}
+					\begin{split}
+						g(0)'' \neq 0\\
+						120 *0^2 \neq 0
+					\end{split}
+				\end{equation}
+				
+				
+			\subsubsection{Wendestellen}
+			\subsubsection{Symmetrie}
+				\subparagraph{Y-Achse}
+				\subparagraph{Punktsymmetrie}
+		\subsection{Ganzrationale Funktionen}
+		\subsection{Integralrechnung}
+			\subsubsection{Fläche zwischen Graph und X-Achse}
+			\subsubsection{Fläche zwischen zwei Funktionsgraphen}
+		\subsection{Extremwertaufgaben}
+
+	\section{Stochastik}
+		\subsection{Baumdiagramm}
+		\subsection{Vierfeldertafel}
+		\subsection{Verteilungen}
+			\subsubsection{Binomialverteilung}
+			\subsubsection{hypergeometrische Verteilung}
+		\subsection{Erwartungswert}
+			Der Erwartungswert gibt den Wert an, welcher zu erwarten ist, wenn man das gegebene Experiment n-Mal durchführt wird. Er wird mit $E\left(X\right)$ bzw. $\mu$ beschrieben und ist wie folgt definiert.
+			\begin{equation}
+				E(X) = \mu = a_1 * P(X = a_1) + a_2 * P(X = a_2) + \dotsc + a_m * P(X = a_m)
+			\end{equation}
+		\subsection{Varianz}
+			Die Varianz gibt die zu erwartende quadratische Abweichung vom Erwartungswert $\mu$ an und wird mit $V\left(X\right)$ beziehungsweise $\sigma$ beschrieben. Man kann sie mittels folgender Gleichung berechnen.
+			\begin{equation}
+				V(X) = \sigma^2 = (a_1 - \mu)^2 * P(X = a_1) + (a_2 - \mu)^2 * P(X = a_2) + \dotsc + (a_m - \mu)^2 * P(X = a_m)
+			\end{equation}
+		\subsection{Standardabweichung}
+			Die Standartabweichung gibt die Abweichung der Werte vom Erwartungswert an. Sie ist die Quadratwurzel der Varianz.
+			\begin{equation}
+				\sigma = \sqrt{V(X)}
+			\end{equation}
+		\subsection{Sigma-Regel}
+			
+
+\end{document}          
