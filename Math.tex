@@ -12,6 +12,7 @@
 \usepackage{tabularx}
 \usepackage{wrapfig}
 \usepackage{float}
+\usepackage{titlesec}
 \usepackage[margin=2cm]{geometry}
 
 
@@ -33,6 +34,13 @@
 	\listoffigures
 	\listoftables
 	\newpage
+	
+	%\setcounter{secnumdepth}{4}
+	
+	\titleformat{\paragraph}
+	{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+	\titlespacing*{\paragraph}
+	{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 	\section{Analysis}
 		\subsection{Kurvendiskussion}
@@ -80,14 +88,27 @@
 				\end{equation}
 				
 			\subsubsection{Ableitungen}
+				\paragraph{Summenregel}
+					Beinhaltet die Funktion, welche man differenziert eine Summe, so leitet man Summantenweise, also jeden Summanten einzeln ab.
+				
+				\paragraph{Produktregel}
+					Beinhaltet die Funktion, welche man differenziert ein Produkt, so wird wie folgt abgeleitet.
+					\begin{subequations}
+						\begin{align}
+							f(x) &= u(x) * v(x)\\
+							f'(x) &= u'(x) * v(x) + v'(x) * u(x)
+						\end{align}
+					\end{subequations}
+					
+			\paragraph{Beispiel}
+				Die folgenden Funktionen werden als Beispiel für eine Reihe von Ableitungen dienen:
 				\begin{equation}
 					\begin{split}
 						f(x) &= ax^b + c\\
 						g(x) &= 10x^2 + 3\label{abl:origin}
 					\end{split}
 				\end{equation}
-				
-				Die erste Ableitung eines Graphen gibt die Steigung dessen an.
+				Die erste Ableitung eines Graphen gibt dessen Steigung an.
 				\begin{subequations}
 					\begin{equation}
 						f(x)' = a * bx^{b-1}
