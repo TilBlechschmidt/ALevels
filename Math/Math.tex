@@ -234,8 +234,20 @@
 					Da die Bedingung nicht erfüllt ist, ist der Graph nicht symmetrisch zum Ursprung.
 		\subsection{Ganz-rationale Funktionen}
 		\subsection{Integralrechnung}
-			Das Integral definiert die Summe aller Flächen einer Funktion zwischen einem Graphen und der X-Achse. Dabei ist zu beachten, dass der Wert, der Flächen unterhalb der X-Achse negativ ist und das Integral somit nicht den Flächeninhalt zwischen dem Graph und der X-Achse angibt. Um diese zu berechnen ist es erforderlich mehrere Integrale zu berechnen, welche an den Nullstellen getrennt sind, und diese aufzusummieren.
+			Das Integral definiert die Summe aller Flächen einer Funktion zwischen einem Graphen und der X-Achse. Dabei ist zu beachten, dass der Wert, der Flächen unterhalb der X-Achse negativ ist und das Integral somit nicht den Flächeninhalt zwischen dem Graph und der X-Achse angibt. Um diese zu berechnen ist es erforderlich mehrere Integrale zu berechnen, welche an den Nullstellen getrennt sind, und diese aufzusummieren.\\
+			Das Integral mit den Grenzen $a; b$, wobei $a < b$ gilt, wird generell wie folgt ausgedrückt:
+			\begin{equation}
+				\int_{a}^{b}f(x)dx\label{integral}
+			\end{equation}
 			\subsubsection{Fläche zwischen Graph und X-Achse}
+				Das Integral kann gelöst werden, indem man die gegebene Funktion integriert, also ihre Stammfunktion bildet. Dies ist der zur Ableitung entgegengesetzte Vorgang. Die Stammfunktion des Integrals von $f(x) = x^2$ lautet wie folgt.
+				\begin{equation}
+					\begin{split}
+						\int_{a}^{b}x^2dx &= \left[\frac{1}{3}x^3\right]_a^b \\
+										  &= \frac{1}{3} * a^3 - (\frac{1}{3} * b^3)
+					\end{split}
+				\end{equation}
+				Nun kann man für die untere Grenze $a$ und die obere Grenze $b$ Werte einsetzen und erhält den Wert des Integrals zwischen den Grenzen. Möchte man den Flächeninhalt zwischen dem Graph und der X-Achse erhalten, muss man die Nullstellen berechnen und für jeden Bereich zwischen einer Grenze und einer Nullstelle bzw. zwischen zwei Nullstellen ein unabhängiges Integral berechnen. Diese Integrale summiert man auf und erhält den Flächeninhalt zwischen dem Graphen und der X-Achse.
 			\subsubsection{Fläche zwischen zwei Funktionsgraphen}
 		\subsection{Extremwertaufgaben}
 
