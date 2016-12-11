@@ -154,7 +154,7 @@
 			\subsubsection{Symmetrie}
 				\subparagraph{Y-Achse}
 				\subparagraph{Punktsymmetrie}
-		\subsection{Ganzrationale Funktionen}
+		\subsection{Ganz-rationale Funktionen}
 		\subsection{Integralrechnung}
 			\subsubsection{Fläche zwischen Graph und X-Achse}
 			\subsubsection{Fläche zwischen zwei Funktionsgraphen}
@@ -164,18 +164,37 @@
 		\subsection{Baumdiagramm}
 		\subsection{Vierfeldertafel}
 		\subsection{Verteilungen}
+			\subsubsection{Binomialkoeffizient}
+				Ein Binomialkoeffizient ist wie folgt definiert.
+				\begin{equation}
+					\binom{n}{k} = \frac{n!}{k! (n-k)!}
+				\end{equation}
 			\subsubsection{Binomialverteilung}
 				Die Binomialverteilung gibt die Anzahl der Erfolge in einer Serie von Versuchen an, bei denen sich die Wahrscheinlichkeiten für die einzelnen Ereignisse nicht verändert. Dabei können die Versuche nur zwei mögliche Ergebnisse haben. Solche Versuchsreihen werden als Bernoulli-Kette beschrieben.\\
 				Um die Binomialverteilung $B(X = k)$ zu berechnen, benötigt man die Erfolgswahrscheinlichkeit $p$ sowie die Anzahl der Versuche $n$ und die Anzahl der zu erwartenden Erfolge $k$.
 				\begin{equation}
-					B(n; p; k) = \left(
-						\begin{array}{c}
-							n\\
-							k
-						\end{array}
-					\right) * p^k * (1 - p)^{n-k}
+					B(n; p; k) = \binom{n}{k} * p^k * (1 - p)^{n-k}
 				\end{equation}
 			\subsubsection{hypergeometrische Verteilung}
+				Die hypergeometrische Verteilung gibt die Anzahl der Erfolge in einer Serie von Versuchen an, bei denen sich die Wahrscheinlichkeiten für die einzelnen Ereignisse im Laufe der Versuchsreihe ändern. Zur Berechnung benötigt man:
+				\begin{itemize}
+					\item[$N$] Anzahl der Elemente (z.B. Kugeln)
+					\item[$K$] Anzahl der positiven Elemente (z.B. weißen Kugeln)
+					\item[$n$] Anzahl der Züge
+					\item[$k$] Anzahl der gezogenen Erfolge
+				\end{itemize}
+				
+				\noindent
+				Mit diesen Variablen ist die hypergeometrische Verteilung wie folgt definiert.
+				\begin{equation}
+					P\left(X = k\right) = \frac{
+						\binom{K}{k}
+						\binom{N-K}{n-k}
+					}{
+						\binom{N}{n}
+					}
+				\end{equation}
+			
 		\subsection{Erwartungswert}
 			Der Erwartungswert gibt den Wert an, welcher zu erwarten ist, wenn man das gegebene Experiment n-Mal durchführt wird. Er wird mit $E\left(X\right)$ bzw. $\mu$ beschrieben und ist wie folgt definiert.
 			\begin{equation}
